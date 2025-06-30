@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería Interactiva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Galería de Imágenes Interactiva</h1>
+
+ <!-- Validación -->
+
+  <div class="formulario">
+    <h2>Validar número</h2>
+    <input type="text" id="num1" placeholder="Ingresa un número" />
+    <button onclick="validarNumeros()">Validar</button>
+    <p id="mensaje"></p>
+  </div>
+
+ <!-- Agregar imágenes -->
+
+  <div class="formulario">
+    <h2>Agregar Imagen</h2>
+    <input type="url" id="imageUrl" placeholder="Ingresa la URL de la imagen" />
+    <button id="addImage">Agregar Imagen</button>
+    <button id="removeImage">Eliminar Imagen Seleccionada</button>
+  </div>
+
+  <!-- Galería -->
+
+  <div id="gallery" class="gallery"></div>
+
+  <button onclick="history.back()" class="volver">Volver</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
